@@ -8,7 +8,7 @@ app.get('/',(req,res) => {
 
 app.get('/418path',(req,res) => {
 	res.status(418);
-	res.set();
+	res.send();
 });
 
 app.listen(port,() => console.log(`Example app listening on port ${port}!`))
