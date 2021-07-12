@@ -8,7 +8,8 @@ app.get('/',(req,res) => {
 
 app.get('/418path',(req,res) => {
 	res.status(418);
-	res.send();
+	res.set('X-full-stack', '4life')
+	res.send('I prefer coffee');
 });
 
 app.listen(port,() => console.log(`Example app listening on port ${port}!`))
